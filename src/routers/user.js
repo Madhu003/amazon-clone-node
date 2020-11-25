@@ -7,10 +7,9 @@ const router = express.Router();
 const { getUsers, addUser } = require("../controllers/user");
 
 router.get("/users", getUsers);
-
 router.post("/user", addUser);
 
-let cpUpload = upload.fields([
+const cpUpload = upload.fields([
     { name: 'image', maxCount: 1 }
 ]);
 

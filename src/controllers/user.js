@@ -6,7 +6,7 @@ exports.getUsers = (req, res) => {
         console.log(list)
         res.json(list);
     })
-};
+}
 
 exports.addUser = (req, res) => {
     let user = new User(req.body);
@@ -17,4 +17,4 @@ exports.addUser = (req, res) => {
 
         res.json(user);
     });
-};
+}
